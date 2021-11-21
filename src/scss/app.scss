@@ -1,0 +1,199 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    font-family: Roboto !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    color: #1A1B22 !important;
+}
+
+header {
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px #D1D2D6;
+}
+
+.logo {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.bread-crumbs {
+    color: rgba(26, 27, 34, 0.5);
+}
+
+.welcome-block_main {
+    font-family: Roboto Slab;
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.cards {
+    background: #F5F6F7;
+}
+
+:root {
+    --radius: 4%;
+    --card-width: 400px;
+}
+
+.my-card {
+    width: var(--card-width);
+    height: 576px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card_cup {
+    position: relative;
+    border-radius: var(--radius);
+}
+
+.card_image {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    width: 100%;
+}
+
+.card_category {
+    position: absolute;
+    top: 32px;
+    left: 24px;
+}
+
+.card_delete-from-saved {
+    position: absolute;
+    top: 32px;
+    right: 90px;
+}
+
+.card_delete {
+    position: absolute;
+    top: 32px;
+    right: 15px;
+}
+
+.card_cloud {
+    padding: 6px 12px;
+    background: white;
+    border-radius: 25px;
+}
+
+.card_content {
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card_date {
+    font-family: Source Sans Pro;
+    color: #B6BCBF;
+    margin: 20px 0px 12px 0px;
+}
+
+.card_title {
+    font-family: Roboto Slab;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.card_description {
+    font-size: 16px;
+    line-height: 22px;
+    flex-grow: 1;
+}
+
+.card_tag {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin-bottom: 24px;
+}
+
+footer {
+    height: 80px;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+}
+
+
+@media (max-width: 645px) {
+    .header_content {
+        display: none;
+    }
+
+    header {
+        height: 56px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer_content {
+        order: -1;
+    }
+
+    .footer_links {
+        flex-direction: column;
+    }
+
+    .copyright {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .welcome-block_main {
+        width: auto;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .bread-crumbs {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .cards-wrapper {
+        padding: 24px 0px;
+    }
+
+    :root {
+        --card-width: 288px;
+        --card-cloud-shift: 16px;
+    }
+
+    .card_category {
+        top: var(--card-cloud-shift);
+        left: var(--card-cloud-shift);
+    }
+
+    .card_delete {
+        top: var(--card-cloud-shift);
+        right: var(--card-cloud-shift);
+    }
+
+    .card {
+        height: 535px;
+    }
+
+    .card_delete-from-saved {
+        display: none;
+    }
+}
