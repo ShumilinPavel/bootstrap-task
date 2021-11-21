@@ -135,7 +135,7 @@ footer {
 }
 
 
-@media (max-width: 645px) {
+@media (max-width: 767px) {
     .header_content {
         display: none;
     }
@@ -145,7 +145,7 @@ footer {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 660px) {
     .footer_content {
         order: -1;
     }

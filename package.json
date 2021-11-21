@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "editorconfig-checker && node-w3c-validator -i ./**/*.html -f lint -s"
+    "test": "editorconfig-checker && node-w3c-validator -i ./src/**/*.html -f lint -s",
+    "serve": "serve"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
@@ -24,6 +25,7 @@
   "dependencies": {
     "bootstrap": "^4.6.1",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "serve": "^13.0.2"
   }
 }
